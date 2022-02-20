@@ -1,0 +1,33 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+        compatible = "radxa,zero", "amlogic,g12a";
+
+        fragment@0 {
+                target = <&spicc1>;
+                __overlay__ {
+                        #address-cells = <1>;
+                        #size-cells = <0>;
+                        pinctrl-0 = <&spicc1_pins &spicc1_ss0_pins>;
+                        pinctrl-names = "default";
+                        st7789v@0 {
+                        compatible = "sitronix,st7789v";
+                        status = "okay";
+                        reg = <0>;
+                        spi-max-frequency = <10000000>;
+                        width = <135>;
+                        height = <240>;
+                        buswidth = <8>;
+                        fps = <60>;
+                        rotate = <270>;
+                        debug = <1>; // 等级0～7 越高信息越多
+
+                        // configure pin assigment below
+                        reset-gpios = <0x4b 8 1>;       // pin 36
+                        dc-gpios = <0x2b 74 0>;         // pin 12
+                        led-gpios = <0x2b 73 0>;        // pin 18
+                        };
+                };
+        };
+};
