@@ -1,8 +1,10 @@
 # Radxa Zero SPI Display Driver Install
 
-credits to: https://github.com/HejinYo for share the initial steps that can be found here: https://github.com/HejinYo/ss/blob/master/doc/radxa/radxa-zero-spi-led.md
+credits to: [HejinYo](https://github.com/HejinYo) for sharing the initial steps that can be found [here](https://github.com/HejinYo/ss/blob/master/doc/radxa/radxa-zero-spi-led.md).
+<br/>
 
-I just made it clear, and added step to compile kernel for displays
+I just made some updates, and added step to compile kernel for the displays
+<br/>
 
 It should be able to support most of the available display drivers in the kernel. (Check the kernel directory for the available source) <br/>
 We just need to modify compile and update into Radxa Zero.
