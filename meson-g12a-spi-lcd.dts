@@ -24,7 +24,7 @@
                         debug = <1>; // 等级0～7 越高信息越多
 
                         // configure pin assigment below
-                        reset-gpios = <0x4b 8 1>;       // pin 36
+                        reset-gpios = <0x2b 8 1>;       // pin 36
                         dc-gpios = <0x2b 74 0>;         // pin 12
                         led-gpios = <0x2b 73 0>;        // pin 18
                         };
