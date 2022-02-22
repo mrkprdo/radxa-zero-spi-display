@@ -54,7 +54,7 @@ overlays=meson-g12a-spi-lcd
 param_spidev_spi_bus=1
 param_spidev_max_freq=10000000
 
-# Compile the kernel, go to kernel-linux-5.10.y-radxa-zero directory
+# Compile the kernel, go to kernel-linux-5.10.y-radxa-zero/drivers/staging/fbtft/ directory
 # if your display is st7789, you should take that .ko file
 # be sure to change xxxx's to your own path
 make && sudo cp {fb_st7789v.ko,fbtft.ko} /usr/lib/modules/5.10.xx-x-amlogic-xxxxxxxxxxxxx/kernel/drivers/staging/fbtft/
